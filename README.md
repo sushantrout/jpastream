@@ -1,5 +1,4 @@
-'''
-CREATE OR REPLACE FUNCTION get_employees_by_name_prefix(prefix_param VARCHAR)
+``` CREATE OR REPLACE FUNCTION get_employees_by_name_prefix(prefix_param VARCHAR)
 RETURNS TABLE (
     id INT,
     name VARCHAR
@@ -12,5 +11,4 @@ BEGIN
     WHERE name LIKE prefix_param || '%';
 END;
 $$ LANGUAGE plpgsql;
-
-'''
+```
