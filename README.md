@@ -1,4 +1,4 @@
-```
+'''
 CREATE OR REPLACE FUNCTION get_employees_by_name_prefix(prefix_param VARCHAR)
 RETURNS TABLE (
     id INT,
@@ -13,4 +13,4 @@ BEGIN
 END;
 $$ LANGUAGE plpgsql;
 
-```
+'''
